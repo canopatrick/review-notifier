@@ -1,5 +1,7 @@
 # Simple Assigned Pull Request Watcher
 
+![REVIEW THIS](https://raw.githubusercontent.com/canopatrick/review-notifier/refs/heads/main/review-notifier-banner.jpg)
+
 This uses [node-notifier](https://github.com/mikaelbr/node-notifier) which technically supports multiple platforms; on macOS, there seem to be some issues, and many of its features don't work. Nevertheless, it should notify you within a minute of a PR being assigned to you by way of a platform-specific notification. Not tested on anything but macOS Sequoia 15.5.
 
 Duplicates are not presently persisted between sessions.
@@ -10,11 +12,15 @@ Ensure `GITHUB_TOKEN` is set in your shell's environment.
 
 ## Installation
 
+```sh
 npm install
+```
 
 ## Running
  
+```sh
 npm run watch
+```
 
 > [!NOTE]
 > Eventually this will run out of memory and will abort or may abort of other reasons. For now, just restart it.
